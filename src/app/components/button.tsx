@@ -1,18 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ReactNode } from "react";
-
-interface CustomButtonProps {
-    title?: string;
-    isMode?: boolean;
-    variant?: "default" | "outline";
-    onClick?: () => void;
-    disabled?: boolean;
-    className?: string;
-    icon?: ReactNode;
-    children?: ReactNode;
-    type?: "button" | "submit" | "reset";
-}
+import { CustomButtonProps } from "../shared/interfaces/common.interface";
 
 const CustomButton = ({
     title,

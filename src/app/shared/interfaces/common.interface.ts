@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface Book {
     id: number;
     title: string;
@@ -21,4 +23,16 @@ export interface AcknowledgmentModalProps {
 export interface TermsModalProps {
     onAccept: () => void
     onClose: () => void
+}
+
+export interface CustomButtonProps {
+    title?: string;
+    isMode?: boolean;
+    variant?: "default" | "outline";
+    onClick?: () => void;
+    disabled?: boolean;
+    className?: string;
+    icon?: ReactNode;
+    children?: ReactNode;
+    type?: "button" | "submit" | "reset";
 }
