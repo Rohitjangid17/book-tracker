@@ -4,8 +4,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Link from "next/link";
 import CustomButton from "./button";
 import Image from "next/image";
+import { Book } from "../shared/interfaces/common.interface";
 
-const CustomCard = ({ data }: any) => {
+const CustomCard = ({ data }: { data: Book }) => {
     return (
         <>
             <Card className="overflow-hidden">
