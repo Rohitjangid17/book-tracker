@@ -1,0 +1,1 @@
+export const MIN_READ_TIME = 60;
